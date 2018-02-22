@@ -1,14 +1,15 @@
 body{
 	background-color:#090a07;
-	font-family: 'Cinzel', serif;
+	font-family: 'Philosopher', cursive;
 }
 
 .navbar{
-	background-color: #090a07;
-	opacity: 0.8;
-	font-size: 22px;
-	padding: 5px 20px;
-}
+ 	background-color: #090a07;
+ 	opacity: 0.8;
+ 	font-size: 22px;
+ 	padding: 5px 20px;
+ 	color: #fff;
+ }  
 .logoTxt {
 	color: MistyRose;
 	font-size: 28px;
