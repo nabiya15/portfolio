@@ -1,19 +1,23 @@
 body{
 	background-color:#090a07;
 	font-family: 'Philosopher', cursive;
+	
 }
-
+h2{
+	font-size: 2.5em;
+}
 .navbar{
 	width: 100%;
  	background-color: #090a07;
  	opacity: 0.8;
  	font-size: 22px;
- 	padding: 5px 20px;
+ 	padding: 1em;
  	color: #fff;
  	position: fixed;
  	top: 0;
  	left: 0;
  	z-index: 999;
+ 	transition: top 0.3s;
  }  
  .navbar.hidden{
  	display: none;
@@ -21,7 +25,7 @@ body{
 .logoTxt {
 	color: MistyRose;
 	font-size: 28px;
-	border: 3px dotted;
+	border: 3px inset;
 	border-radius: 50%;
 	padding: 8px;
 	
@@ -40,19 +44,20 @@ body{
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
-	height: 580px;
+
+
 	
 }
 
 .intro{
-	background-color: #c7b897;
+	background-color: silver;
 	color: #090a07;
 	opacity: 0.6;
 	font-weight: bolder;
 	text-align: center;
     padding: 20px;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 .intro > h2{
@@ -80,6 +85,8 @@ body{
 	animation: bounceIn 1.5s ;
 }
 
+
+
 .parallax2{
 	background-image: url("../images/me.png");
 	background-repeat: no-repeat;
@@ -88,6 +95,7 @@ body{
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
+
 	
 }
 #skillsDisplay{
@@ -98,17 +106,21 @@ body{
 	opacity: 0.8;
 
 }
+.row{
+	display: inline-flex;
+	justify-content: center;
+}
 
 #skillsDisplay>img{
 	padding: 5px;
 }
 #skillsExplain{
-	background-color: #383120;
+	background-color: #141414;
 	opacity: 0.85;
 	width: 100%;
 	padding: 30px;
 	text-align: center;
-	height: 100%;
+	
 
 }
 
@@ -143,7 +155,8 @@ body{
 }
 
 .worksDisplay{
-	padding: 50px;
+	padding: 4rem;
+	margin: auto;
 	
 }
 
@@ -151,8 +164,8 @@ body{
 	margin: auto;
 	text-align: center;
 	padding: 10px;
-	color: lightgray;
-	background-color: #090a07;
+	color: #090a07;
+	background-color: lightgray;
 	opacity: 0.9;
 }
 
@@ -172,7 +185,8 @@ body{
 }
 
 .card{
-	
+	min-width: 35%;
+	max-width: 50%;
 	text-align: center;
 	margin: 20px;
 
