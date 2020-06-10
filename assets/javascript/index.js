@@ -9,3 +9,7 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+$(document).on('click',function(){
+$('.collapse').collapse('hide');
+})

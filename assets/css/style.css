@@ -5,23 +5,25 @@ body{
 }
 h2{
 	font-size: 2.5em;
+	padding: 0.5em;
+	padding-top: 1em;
+	text-align: center;
 }
 .navbar{
 	width: 100%;
  	background-color: #090a07;
- 	opacity: 0.8;
+ 	
  	font-size: 22px;
  	padding: 1em;
  	color: #fff;
  	position: fixed;
  	top: 0;
- 	left: 0;
  	z-index: 999;
  	transition: top 0.3s;
  }  
- .navbar.hidden{
+/* .navbar.hidden{
  	display: none;
- }
+ }*/
 .logoTxt {
 	color: MistyRose;
 	font-size: 28px;
@@ -43,16 +45,13 @@ h2{
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
-	width: 100%;
-
-
-	
+	width: 100%;	
 }
 
 .intro{
-	background-color: silver;
-	color: #090a07;
-	opacity: 0.6;
+	background-color: black;
+	color: white;
+	opacity: 80%;
 	font-weight: bolder;
 	text-align: center;
     padding: 20px;
@@ -72,8 +71,9 @@ h2{
 	padding: 25px;
 	width: 100%;
 	margin: 0 auto;
-	color: #090a07;
+	color: white;
 	position: absolute;
+	font-size: 1.2em;
 	font-weight: bold;
 	bottom: 0;
 	left: 0;
@@ -86,6 +86,11 @@ h2{
 }
 
 
+#skills{
+	background-color: white;
+	color:black;
+}
+
 
 .parallax2{
 	background-image: url("../images/me.png");
@@ -95,30 +100,53 @@ h2{
 	background-attachment: fixed;
 	position: relative;
 	width: 100%;
-
 	
 }
 #skillsDisplay{
 	margin: auto;
 	background-color: #090a07;
 	width: 100%;
-	padding: 20px;
-	opacity: 0.8;
+	padding: 2em;
+	opacity: 0.85;
+	margin:auto;
 
 }
+
+.skill{
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+}	
+.progress-label{
+	padding: 0 2em;
+	width: 8em;
+	
+	
+}
+.progress{
+	width: 60%;
+	margin-top: 2em;
+	
+	height: 3em;
+}
+
+
 .row{
 	display: inline-flex;
 	justify-content: center;
+	padding: 1em;
 }
 
 #skillsDisplay>img{
 	padding: 5px;
 }
 #skillsExplain{
-	background-color: #141414;
+	background-color: black;
 	opacity: 0.85;
 	width: 100%;
-	padding: 30px;
+	
 	text-align: center;
 	
 
@@ -127,7 +155,7 @@ h2{
 #skillsHeading{
 	color: MistyRose;	
 	margin: auto;
-	padding: 40px;
+
 
 }
 
@@ -163,7 +191,7 @@ h2{
 #workHeader{
 	margin: auto;
 	text-align: center;
-	padding: 10px;
+	padding: 1.5em;
 	color: #090a07;
 	background-color: lightgray;
 	opacity: 0.9;
@@ -185,10 +213,10 @@ h2{
 }
 
 .card{
-	min-width: 35%;
-	max-width: 50%;
+
 	text-align: center;
 	margin: 20px;
+	height: 100%;
 
 }
 
@@ -218,4 +246,16 @@ h3{
 
 .socialIcons:hover{
 	color: #fdcc00;
+}
+
+@media only screen and (max-width: 600px) {
+ 	.parallax1{
+		background-image: url("../images/small.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		position: relative;
+		width: 100%;
+
+	}
 }
